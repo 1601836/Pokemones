@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 8rem;
+    position: fixed;
+    background-color: silver;
+    top: 0;
+}
+.menu{
+    width: 100%;
+    height: 100%;
+}
+.sub_menu{
+    width: 100%;
+    height: 60%;
+    display: grid;
+    place-items: center;
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.infe_menu{
+    width: 100%;
+    height: 40%;
+}
+#check_menu{
+    display: none;
+}
+#label_menu{
+    display: none;
+}
+.button_menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+nav{
+    width: 100%;
+    height: 100%;
+}
+ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+li{
+    width: 100%;
+    height: 100%;
+    background-color: silver;
+    font-size: 2rem;
+}
+li:hover{
+    transform: scale(1.1);
+    transition: all 300ms ease;
+    background-color: rgb(153, 142, 142);
+}
+a{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+
+/* main*/
+main{
+    margin-top: 8rem;
+    width: 100%;
+    height: 100%;
+}
+.box{
+    padding-top: 15rem;
+    width: 80%;
+    height: 80dvh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+.poke{
+    width: 35%;
+    background-color: beige;
+    height: 100%;
+}
+img{
+    width: 100%;
+}
+.info_poke{
+    width: 65%;
+    height: 100%;
+    background-color: yellow;
+}
+.texto{
+    width: 100%;
+    height: 30%;
+    background-color: brown;
+}
+h1{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+}
+.sub_info_poke{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 70%;
+    width: 100%;
+}
+.info_one{
+    width: 100%;
+    height: 100%;
+}
+.info_one > h2{
+    margin-top: 5rem;
+}
+.info_two{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 800px){
+    nav{
+        width: 100%;
+        height: 100%;
+    }
+    nav ul{
+        flex-direction: column;
+        visibility: hidden;
+        opacity: 0;
+        width: 50%;
+        margin-top: 3rem;
+        left: 0;
+        height: 40dvh;
+        position: absolute;
+    }
+
+    #label_menu{
+    display: block;
+    padding-left: 1rem;
+    width: 2rem;
+    color: blue;
+    height: 100%;
+    padding-top: 10px;
+    }
+
+    #check_menu:checked ~ nav ul{
+        visibility: visible;
+        opacity: 1;
+    }
+
+}

@@ -366,3 +366,8 @@ footer{
         bottom: 0;
     }
 }
+@media screen and (max-width: 700px){
+    nav ul li a{
+        font-size: 1rem;
+    }
+}
